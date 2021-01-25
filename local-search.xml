@@ -8,7 +8,7 @@
     <link href="/2021/01/25/java/"/>
     <url>/2021/01/25/java/</url>
     
-    <content type="html"><![CDATA[<p>Welcome to my blog.This article tend to intoduce some knowledge about java.</p><blockquote><p>read me<br>    • 在文中采用#替代空格<br>    • []中的内容是可省略的内容<br>    • ()中的内容是不可省略的内容</p></blockquote><h2 id="start-java"><a href="#start-java" class="headerlink" title="start java"></a>start java</h2>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to my blog.This article tend to intoduce some knowledge about java.</p><p>== read me                  ==<br>==• 在文中采用#替代空格      ==<br>==• []中的内容是可省略的内容  ==<br>==• ()中的内容是不可省略的内容==</p><h2 id="start-java"><a href="#start-java" class="headerlink" title="start java"></a>start java</h2>]]></content>
     
     
     
