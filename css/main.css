@@ -350,7 +350,7 @@ img[srcset] {
   --link-hover-color: #30a9de;
   --link-hover-bg-color: #f8f9fa;
   --navbar-bg-color: #2f4154;
-  --navbar-text-color: #00dffc;
+  --navbar-text-color: #1e2022;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -367,7 +367,7 @@ img[srcset] {
     --link-hover-color: #30a9de;
     --link-hover-bg-color: #364151;
     --navbar-bg-color: #1f3144;
-    --navbar-text-color: #00dffc;
+    --navbar-text-color: #1e2022;
   }
   :root:not([data-user-color-scheme]) img,
   :root:not([data-user-color-scheme]) .note,
@@ -437,7 +437,7 @@ img[srcset] {
   --link-hover-color: #30a9de;
   --link-hover-bg-color: #364151;
   --navbar-bg-color: #1f3144;
-  --navbar-text-color: #00dffc;
+  --navbar-text-color: #1e2022;
 }
 [data-user-color-scheme='dark'] img,
 [data-user-color-scheme='dark'] .note,
