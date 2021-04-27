@@ -178,8 +178,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-04-27 12:06" pubdate>
-        2021年4月27日 中午
+      <time datetime="2021-01-29 20:19" pubdate>
+        2021年1月29日 晚上
       </time>
     </span>
   
@@ -190,7 +190,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      43 字
+      127 字
     </span>
   
 
@@ -200,7 +200,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      2
        分钟
     </span>
   
@@ -237,13 +237,21 @@
             <h1 style="display: none"></h1>
             
             <div class="markdown-body">
-              <h1 id="常微分方程数值解法的梯形公式"><a href="#常微分方程数值解法的梯形公式" class="headerlink" title="常微分方程数值解法的梯形公式"></a>常微分方程数值解法的梯形公式</h1><h2 id="梯形公式"><a href="#梯形公式" class="headerlink" title="梯形公式"></a>梯形公式</h2><p>$$<br>\LARGE y_{i+1}=y_i+\frac{h}{2}[f(x_i,y_i)+f(x_{i+1}+y_{i+1})]\ \Large (i=0,1,\cdots,n-1)<br>$$</p>
+              <h1 id="定积分计算的复化辛卜生公式算法描述"><a href="#定积分计算的复化辛卜生公式算法描述" class="headerlink" title="定积分计算的复化辛卜生公式算法描述"></a>定积分计算的复化辛卜生公式算法描述</h1><p>$$<br>S_n(x)=\frac{h}{6}\left[f(x_0)+2\sum\limits^{n-1}<em>{k=1}f(x_k)+f(x_n)+4\sum\limits^{n-1}</em>{k=0}f(x_{k+1})\right]<br>$$</p>
+<figure class="highlight c"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs c">h=(b-a)/n;\\将区间n等分，h为步长<br>x1=a;<br>x2=a+h/<span class="hljs-number">2</span>;<br>y1=<span class="hljs-number">0</span>;<br>y2=f(x2);<br><span class="hljs-keyword">for</span>(i=<span class="hljs-number">1</span>;i&lt;=n<span class="hljs-number">-1</span>;i++)<br>&#123;<br>    x1=x1+h;<br>    x2=x2+h;<br>    y1=y1+f(x1);\\ f（xk）的总和<br>    y2=y2+f(x2);\\ f(x(k+<span class="hljs-number">1</span>/<span class="hljs-number">2</span>))的总和<br>&#125;<br>S=(f(a)+f(b)+<span class="hljs-number">2</span>*y1+<span class="hljs-number">4</span>*y2)*h/<span class="hljs-number">6</span>;\\复化辛卜生公式<br></code></pre></div></td></tr></table></figure>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/">计算方法</a>
+                    
+                  </div>
                 
               </div>
               
@@ -254,9 +262,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/04/27/%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/1/%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97%E7%9A%84%E5%A4%8D%E5%8C%96%E8%BE%9B%E5%8D%9C%E7%94%9F%E5%85%AC%E5%BC%8F%E7%AE%97%E6%B3%95%E6%8F%8F%E8%BF%B0/">
+                      <a href="/2021/01/29/%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"></span>
+                        <span class="hidden-mobile">计算方法目录</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -264,7 +272,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/04/27/%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/1/%E6%96%B9%E7%A8%8B%E6%B1%82%E6%A0%B9%E7%9A%84%E4%BA%8C%E5%88%86%E6%B3%95%E7%AE%97%E6%B3%95%E6%8F%8F%E8%BF%B0/">
+                      <a href="/2021/01/29/%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/1/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E6%95%B0%E5%80%BC%E8%A7%A3%E6%B3%95%E7%9A%84%E6%A2%AF%E5%BD%A2%E5%85%AC%E5%BC%8F/">
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
