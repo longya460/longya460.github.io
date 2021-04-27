@@ -17,9 +17,25 @@
   <meta name="description" content="">
   <meta name="author" content="kolik">
   <meta name="keywords" content="">
-  <title>归档 - kolik</title>
+  <title>kolik</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/xt256.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -150,11 +166,48 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="归档">
+            <span class="h2" id="subtitle" title="">
               
-                归档
+                
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-04-27 12:06" pubdate>
+        2021年4月27日 中午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      700 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      11
+       分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -171,40 +224,118 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 13 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2020</p>
-    
-    <a href="/2020/12/21/hello-world/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Hello World</span>
-      <time style="float: right;">12-21</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            <div class="markdown-body">
+              <h1 id="拉格朗日插值多项式与插值余项"><a href="#拉格朗日插值多项式与插值余项" class="headerlink" title="拉格朗日插值多项式与插值余项"></a>拉格朗日插值多项式与插值余项</h1><hr>
+<h2 id="拉格朗日插值"><a href="#拉格朗日插值" class="headerlink" title="拉格朗日插值"></a>拉格朗日插值</h2><table>
+<thead>
+<tr>
+<th>x</th>
+<th>x<del>0</del></th>
+<th>x<del>1</del></th>
+<th>x<del>2</del></th>
+<th>…</th>
+<th>x<del>n</del></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>y</td>
+<td>y<del>0</del></td>
+<td>y<del>1</del></td>
+<td>y<del>2</del></td>
+<td>…</td>
+<td>y<del>n</del></td>
+</tr>
+</tbody></table>
+<p><strong>n次插值多项式:</strong><br>$$<br>L_n(x);=;P_n(x);=;\sum^n_{k=0};l_k(x);y_k;,其中;l_k(x);=;\prod^n_{i=0\i\neq k};\frac{x-x_i}{x_k-x_i}<br>$$<br>其中,l<del>0</del>(x),l<del>1</del>(x)…,l<del>n</del>(x)成为n次拉格朗日插值基函数。</p>
+<hr>
+<h2 id="插值余项"><a href="#插值余项" class="headerlink" title="插值余项"></a>插值余项</h2><p>$$<br>R_n(x);=;f(x)-L_n(x)<br>$$</p>
+<p><strong>==定理4.2==：</strong>设 $f^{(n)}(x)$ 在 [a,b] 上连续，$f^{(n+1)}(x)$  在 (a,b) 内存在，节点 $a\leq x_0&lt;\cdots&lt;x_n\leq b$ ，L<del>n</del>（x）是满足插值条件 $L_n(x_i);=;y_j\quad(j=0,1,\cdots,n)$ 的n次插值多项式，则对任意 $x\in[a,b]$ ，插值余项<br>$$<br>R_n(x)=f(x)-L_n(x)=\frac{f^{(n+1)}(\epsilon)}{(n+1)!}W_{n+1}(x)<br>$$<br>其中，$W_{n+1}(x)=(x-x_0)(x-x_1)\cdots(x-x_n),;\epsilon\in(a,b)$ 且依赖于 x 的位置。</p>
+<blockquote>
+<ul>
+<li><p>当 f(x) 次数小于n，R(x) = 0;</p>
+<p>所以， $f(x)=L_n(x)=\sum\limits^n_{j=0}l_j(x)y_i$。</p>
+<p>特别 $f(x)\equiv1$ 时有 $\sum\limits^n_{j=0}l_j(x)\equiv1$。</p>
+</li>
+<li><p>余项表达式只有在 $f^{n+1}(x)$ 存在时才能使用，通常计算其误差限。</p>
+<p>记 $M_{n+1}=\max\limits_{a\leq x\leq b}\lvert f^{n+1}(x)\lvert$ ，则<br>$$<br>\lvert R(x)\lvert\leq\frac{M_{n+1}}{(n+1)!}\lvert W_{n+1}(x)\lvert<br>$$</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><p><strong>利用函数 $y=\sqrt x$ 在 x<del>1</del>=100，x<del>2</del>=121处的值，计算 $\sqrt{115}$ 的近似值，并估计误差。</strong></p>
+<p>解：一次拉格朗日插值多项式为<br>$$<br>L_1(x)=\frac{x-121}{100-121}\times10+\frac{x-100}{121-100}\times11=\frac{x}{21}+\frac{110}{21}<br>\<br>L_1(115)\approx10.7143<br>\<br>f^{\prime\prime}(x)=-\frac{1}{4}x^{-\frac{3}{2}}<br>\<br>\therefore M_2=\lvert f^{\prime\prime}(100)\lvert=\frac{1}{4000}<br>\<br>\therefore \lvert R_1(115)\lvert\leq\frac{M_2}{2!}\lvert(115-100)(115-121)\lvert\approx0.01125<br>$$</p>
+<hr>
+<p><strong>已知特殊角30°，45°，60° 的正弦函数值为 $\frac{1}{2};,\frac{\sqrt{2}}{2};,\frac{\sqrt{3}}{2}$ ，分别用一次，二次插值多项式近似 sinx， 并求 sin15°。</strong></p>
+<p>解：（1）取30°，60°作一次插值<br>$$<br>L_1(x)=\frac{x-60}{30-60}\cdot\frac{1}{2}+\frac{x-30}{60-30}\cdot\frac{\sqrt{3}}{2}\<br>\therefore L_1(50)\approx 0.74402<br>$$<br>​        （2）取30°，45°，60°作二次插值<br>$$<br>L_2(x)=\frac{(x-45)(x-60)}{(30-45)(30-60)}\cdot\frac{1}{2}+\frac{(x-30)(x-60)}{(45-30)(45-60)}\cdot\frac{\sqrt{2}}{2}+\frac{(x-30)(x-45)}{(60-30)(60-45)}\cdot\frac{\sqrt{3}}{2}\<br>\therefore L_2(50)\approx0.76543<br>$$</p>
+<blockquote>
+<p>误差分析</p>
+<p>$f(x)=\sin x$ 插值区间：[30°，60°]</p>
+<p>$f^\prime(x)=\cos x\quad f^{\prime\prime}=-\sin x\quad f^{(3)}=-\cos x$</p>
+<p>$$<br>(1)\quad M_1=\max_{30\leq x\leq 60}\lvert f^{\prime\prime}(x)\lvert=\frac{\sqrt{3}}{2}<br>\quad<br>W_1(50)=(50-30)(50-60)\left(\frac{\pi}{180}\right)^2<br>\<br>\therefore \lvert R_1(50) \lvert\leq\frac{M_1}{2!}\lvert W_1(50) \lvert \leq 0.02638<br>\<br>(2)\quad M_2=\max_{30 \leq x \leq 60}\lvert f^{(3)}(x)\lvert=\frac{\sqrt{3}}{2}<br>\quad<br>W_2(50)=(50-30)(50-45)(50-60)\left(\frac{\pi}{180}\right)^2<br>\<br>\therefore \lvert R_2(50)\lvert \leq\frac{M_2}{2!}\lvert W_2(50)\lvert\leq0.000767<br>$$</p>
+<p><em>内插比外推精度高；增加插值节点可提高精度</em></p>
+</blockquote>
 
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/04/27/%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/1/%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97%E7%9A%84%E5%A4%8D%E5%8C%96%E8%BE%9B%E5%8D%9C%E7%94%9F%E5%85%AC%E5%BC%8F%E7%AE%97%E6%B3%95%E6%8F%8F%E8%BF%B0/">
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -284,9 +415,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
 
 
 
